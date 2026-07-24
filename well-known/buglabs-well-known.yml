@@ -1,0 +1,72 @@
+generated: '2026-07-20'
+method: searched
+source: live HTTP probes of Bug Labs hosts, 2026-07-20
+notes: >-
+  No /.well-known/ discovery documents are published on any Bug Labs host.
+  blstudio.ai returns HTTP 200 for every path including nonexistent ones -- it is
+  a single-page-app catch-all serving the same 1839-byte marketing HTML, so all
+  of its 200s are false positives and are recorded as such. buglabs.net serves
+  genuine 404s. No WellKnown or SecurityTxt pointer is wired in apis.yml because
+  nothing real was found.
+hosts:
+- host: https://buglabs.net
+  catch_all: false
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /openapi.json
+    status: 404
+- host: https://www.signalpattern.com
+  catch_all: false
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /openapi.json
+    status: 404
+- host: https://blstudio.ai
+  catch_all: true
+  catch_all_evidence: >-
+    /this-path-is-fake-12345 also returns HTTP 200 with the identical
+    text/html body (1839 bytes); treat every 200 below as not-found.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    verified: false
+  - path: /.well-known/openid-configuration
+    status: 200
+    verified: false
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    verified: false
+  - path: /.well-known/api-catalog
+    status: 200
+    verified: false
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    verified: false
+  - path: /llms.txt
+    status: 200
+    verified: false
+  - path: /openapi.json
+    status: 200
+    verified: false

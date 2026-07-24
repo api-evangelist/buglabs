@@ -1,20 +1,46 @@
 aid: buglabs
-name: Buglabs
-description: Buglabs is a company surfaced as a portfolio company of union-square-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+name: Bug Labs
+description: >-
+  Bug Labs is a New York City enterprise software company founded in 2006, first as one of the
+  earliest open-source modular hardware makers and later as an enterprise IoT platform provider
+  serving Fortune 500 customers including Verizon, Comcast, VMware, Ford, Charter and Orange. Its
+  current flagship product, Signalpattern, targets workflow fragmentation by mapping and connecting
+  dispersed enterprise systems, automating cross-system tasks, and letting users interact with APIs
+  directly without writing code. Bug Labs previously operated the well-known public IoT APIs
+  dweet.io, dweetpro.io and freeboard.io; all three are decommissioned and the company publishes no
+  developer portal, API documentation or public API today. Backed by Union Square Ventures, Spark
+  Capital and Court Square Ventures.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/69174c2cf313ce2b68a62568/69174c2cf313ce2b68a625a0_BUG_logo_black_trans.png
 url: https://raw.githubusercontent.com/api-evangelist/buglabs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - union-square-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Enterprise Software
+- Internet of Things
+- Workflow Automation
+- API Orchestration
+- Networking
+- Artificial Intelligence
+- New York
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +49,45 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://buglabs.com
+  url: https://buglabs.net
+- type: About
+  url: https://buglabs.net/about
+- type: Support
+  url: https://buglabs.net/contact
+- type: Blog
+  url: https://blog.buglabs.net
+- type: BlogRSS
+  url: https://blog.buglabs.net/feed
+- type: GitHubOrganization
+  url: https://github.com/buglabs
+- type: Packages
+  url: packages/buglabs-packages.yml
+- type: Lifecycle
+  url: lifecycle/buglabs-lifecycle.yml
+- type: LLMsTxt
+  url: llms/buglabs-llms.txt
+- type: DomainSecurity
+  url: security/buglabs-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
+x-products:
+- name: Signalpattern
+  url: https://www.signalpattern.com
+  state: active
+  public_api: false
+- name: BL Studio
+  url: https://blstudio.ai
+  state: active
+  public_api: false
+- name: dweet.io
+  url: https://dweet.io
+  state: decommissioned
+- name: dweetpro.io
+  url: https://dweetpro.io
+  state: decommissioned
+- name: freeboard.io
+  url: https://freeboard.io
+  state: decommissioned

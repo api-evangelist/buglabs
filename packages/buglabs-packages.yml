@@ -1,0 +1,63 @@
+generated: '2026-07-20'
+method: searched
+source: https://registry.npmjs.org/ (npm registry lookups) + https://github.com/buglabs
+notes: >-
+  Bug Labs published first-party Node.js client libraries for its dweet.io and
+  dweetpro.io messaging services. Both packages are still resolvable on npm, but
+  the backing services they call (dweet.io, dweetpro.io) no longer answer on
+  port 443 as of the 2026-07-20 probe, so these are historical clients rather
+  than working SDKs. No SDKs pointer is emitted in apis.yml for that reason.
+  Registries probed with no first-party Bug Labs result: PyPI, Maven Central,
+  NuGet, pkg.go.dev, RubyGems, Packagist, crates.io.
+packages:
+- language: javascript
+  registry: npm
+  name: node-dweetio
+  url: https://www.npmjs.com/package/node-dweetio
+  install: npm install node-dweetio
+  version: 0.0.11
+  last_published: '2022-06-21'
+  repository: https://github.com/buglabs/node-dweetio
+  description: A node.js client for dweet.io
+  official: true
+  status: unmaintained
+  service_reachable: false
+- language: javascript
+  registry: npm
+  name: node-dweetproio
+  url: https://www.npmjs.com/package/node-dweetproio
+  install: npm install node-dweetproio
+  version: 1.0.1
+  last_published: '2022-06-21'
+  repository: https://github.com/buglabs/node-dweetproio
+  description: A node.js client for dweetpro.io
+  official: true
+  status: unmaintained
+  service_reachable: false
+third_party_seen:
+- name: dweetio
+  registry: npm
+  url: https://www.npmjs.com/package/dweetio
+  repository: https://github.com/vanita5/dweetio
+  official: false
+- name: dweepy
+  registry: pypi
+  url: https://pypi.org/project/dweepy/
+  official: false
+registries_probed:
+- registry: npm
+  result: two first-party packages
+- registry: pypi
+  result: none first-party
+- registry: maven-central
+  result: none
+- registry: nuget
+  result: none
+- registry: pkg.go.dev
+  result: none
+- registry: rubygems
+  result: none
+- registry: packagist
+  result: none
+- registry: crates.io
+  result: none

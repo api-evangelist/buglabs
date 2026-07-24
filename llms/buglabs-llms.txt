@@ -1,0 +1,46 @@
+# Bug Labs, Inc.
+
+> Bug Labs is a New York City enterprise software company founded in 2006, originally as one of the first open-source modular hardware companies, later a Fortune 500 IoT platform provider, and today the maker of Signalpattern — a workflow and API-orchestration product aimed at eliminating the app-switching tax inside large organizations. Backed by Union Square Ventures, Spark Capital and Court Square Ventures.
+
+generated: 2026-07-20
+method: generated
+source: apis.yml + repo artifacts + public site probes (no provider-published llms.txt exists; https://buglabs.net/llms.txt returns 404)
+
+## Important note for agents
+
+Bug Labs has **no public API, no developer portal, and no published API documentation** as of 2026-07-20. Its historical public APIs are all decommissioned. Do not attempt to call them.
+
+## Company
+
+- [Bug Labs](https://buglabs.net): Corporate site — company overview, products, clients (Verizon, Comcast, VMware, Ford, Charter, Orange).
+- [About](https://buglabs.net/about): Company background.
+- [Contact](https://buglabs.net/contact): Contact and demo request form.
+- [Bug's Blog](https://blog.buglabs.net): Official blog (Substack), actively published.
+- [Blog RSS](https://blog.buglabs.net/feed): Blog feed.
+- [GitHub organization](https://github.com/buglabs): 72 public repositories, dormant since 2021.
+
+## Products
+
+- [Signalpattern](https://www.signalpattern.com): Current flagship. Unifies access to scattered enterprise systems, maps and connects dispersed tools, and lets users interact with APIs directly without writing code. No public developer documentation or API reference is published.
+- [BL Studio](https://blstudio.ai): AI product for connected experiences. Marketing site only.
+- Network-Experience-as-a-Service (NXaaS): AI-driven network visibility across carriers, cloud providers and devices.
+- Professional services: go-to-market strategy, prototype/POC development, innovation partnerships.
+
+## Decommissioned APIs (do not call)
+
+- dweet.io: Free, no-signup HAPI/REST messaging service for IoT devices. Connection refused as of 2026-07-20.
+- dweetpro.io: Commercial /v2 tier adding security, management, storage and alerting. Connection refused as of 2026-07-20.
+- freeboard.io: Hosted real-time IoT dashboard. Connection refused as of 2026-07-20.
+- BUGswarm: Earlier device-messaging platform, retired around 2014.
+
+## Historical client libraries
+
+These npm packages are still resolvable but target decommissioned services and are unmaintained.
+
+- [node-dweetio](https://www.npmjs.com/package/node-dweetio): Node.js client for dweet.io, v0.0.11.
+- [node-dweetproio](https://www.npmjs.com/package/node-dweetproio): Node.js client for dweetpro.io, v1.0.1.
+
+## Optional
+
+- [dweetpro.io docs (archived repo)](https://github.com/buglabs/dweetpro.io-docs): Documentation repository for the retired DweetPro API.
+- [Bug Labs on Wikipedia](https://en.wikipedia.org/wiki/Bug_Labs): Company history.

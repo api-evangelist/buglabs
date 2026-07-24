@@ -1,0 +1,63 @@
+generated: '2026-07-20'
+method: searched
+source: live host probes 2026-07-20 + https://github.com/buglabs + https://buglabs.net
+notes: >-
+  Bug Labs publishes no versioning policy, no deprecation policy, no SLA and no
+  status page. This lifecycle record instead captures the observed state of its
+  historical developer platform: all three public IoT API products are
+  decommissioned. No StatusPage or Deprecation pointer is wired in apis.yml
+  because the provider publishes neither.
+versioning_policy: none published
+deprecation_policy: none published
+sunset_headers: not applicable -- no reachable API
+sla: none published
+status_page: none published
+products:
+- name: dweet.io
+  description: >-
+    Free, sign-up-free HAPI/REST messaging service for IoT devices ("dweeting").
+    Bug Labs' best-known public API.
+  url: https://dweet.io
+  state: decommissioned
+  evidence: 'TCP connect to dweet.io:443 refused on 2026-07-20'
+  announced_sunset: none found
+- name: dweetpro.io
+  description: >-
+    Commercial /v2 tier of dweet adding security, management, configuration,
+    storage and alerting for production use.
+  url: https://dweetpro.io
+  docs: https://github.com/buglabs/dweetpro.io-docs
+  state: decommissioned
+  evidence: 'TCP connect to dweetpro.io:443 refused on 2026-07-20'
+  announced_sunset: none found
+- name: freeboard.io
+  description: Hosted real-time IoT dashboard product paired with dweet.
+  url: https://freeboard.io
+  state: decommissioned
+  evidence: 'TCP connect to freeboard.io:443 refused on 2026-07-20'
+  announced_sunset: none found
+- name: BUGswarm
+  description: Earlier Bug Labs device-messaging platform (2013-2014 era).
+  state: decommissioned
+  evidence: 'developer portal repo buglabs/bugswarm-developers last pushed 2013-11-10'
+- name: Signalpattern
+  description: >-
+    Current flagship enterprise workflow/API-orchestration product. Marketing
+    site only -- no public developer portal, documentation, API reference or
+    pricing page found.
+  url: https://www.signalpattern.com
+  state: active
+  public_api: false
+  evidence: '/docs /developers /api /pricing all return HTTP 404 on 2026-07-20'
+- name: BL Studio
+  description: AI product for connected experiences.
+  url: https://blstudio.ai
+  state: active
+  public_api: false
+  evidence: single-page marketing site, catch-all 200s, no developer surface
+source_code:
+  github_org: https://github.com/buglabs
+  public_repos: 72
+  last_repo_push: '2021-07-15'
+  org_profile_updated: '2020-08-17'
+  state: dormant
