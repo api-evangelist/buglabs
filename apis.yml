@@ -47,7 +47,7 @@ tags:
 - Company
 - Enterprise Software
 - IoT
-- Workflow-Automation
+- Workflow Automation
 - API Orchestration
 - Networking
 - Artificial Intelligence
@@ -61,6 +61,7 @@ tags_raw:
 - Networking
 - Artificial Intelligence
 - New York
+- Workflow-Automation
 apis: []
 maintainers:
 - FN: Kin Lane
